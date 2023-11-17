@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Configuración
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,6 +12,17 @@
       <ion-title size="large">Tab 3</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-fab vertical="center" horizontal="center">
+  <ion-fab-button id="present-alert" color="success">Pulsame</ion-fab-button>
+  <ion-alert
+    trigger="present-alert"
+    header="Aplicaciones Web"
+    subHeader="Clase del 2023-11-17"
+    message="Hola mundo"
+    [buttons]="alertButtons"
+  ></ion-alert>
+</ion-fab>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+
+ 
 </ion-content>
